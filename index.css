@@ -1,0 +1,9 @@
+.hero-img{
+    margin-left: 5%;
+}
+@media (max-width:640px) {
+    .m1{
+        justify-content: center;
+    }
+    
+}
