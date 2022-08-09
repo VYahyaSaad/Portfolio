@@ -9,10 +9,11 @@
     <title>Portfolio | Yahya saad</title>
   </head>
   <body>
-    <header class="text-gray-600 body-font">
+    <header class="text-gray-600 body-font sticky top-0 inset-x-0 flex flex-wrap sm:justify-start">
       <div
-        class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
-      >
+        class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center hidden overflow-hidden transition-all duration-300 basis-full grow sm:block"
+          id="navbar-collapse-basic" 
+        >
         <a
           class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
         >
@@ -34,6 +35,7 @@
         </a>
         <nav
           class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center"
+          data-hs-scrollspy="#scrollspy-1" data-hs-scrollspy-offset="70"  data-hs-scrollspy-scrollable-parent="#scrollspy-scrollable-parent-1"
         >
           <a
             class="mr-5 font-semibold cursor-pointer hover:text-gray-900"
@@ -124,14 +126,12 @@
           </div>
           <p class="mb-8 mt-8 leading-relaxed font-medium">
             I am a Interior designer and Architect fro poland. My hobby is
-            creating amazing interor and exterior designs and make them as real
-            world projetcs i have constructed many projects in the world such as
-            Pland, Neatherland, etc,...
+            creating amazing interor and exterior designs.
           </p>
-          <div class="flex justify-center">
-            <button
+          <div class="flex justify-center flex-col align-center">
+            <!-- <button
               class="inline-flex items-center transition-all duration-700 border-solid border-2 border-sky-500 py-1 px-3 focus:outline-none hover:shadow-lg rounded text-base mt-4 md:mt-0 shadow-md p-4 font-sans font-semibold"
-            >
+            style="width: fit-content;">
               <a href="#projects"> My projects </a>
               <svg
                 fill="none"
@@ -144,7 +144,91 @@
               >
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
               </svg>
-            </button>
+            </button> -->
+
+            <ul class="ul-1">
+              <li class="mr-2">
+                <a
+                  href="#"
+                  class="inline-flex p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 group"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    class="mr-2 w-5 h-5 text-gray-400 group-hover:text-gray-500 dark:text-gray-500 dark:group-hover:text-gray-300"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    style="margin-top: 2px"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+                      clip-rule="evenodd"
+                    ></path></svg
+                  >Biography
+                </a>
+              </li>
+              <li class="mr-2">
+                <a
+                  href="#"
+                  class="inline-flex p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 group"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    class="mt-1 mr-2 w-5 h-5 text-gray-400 group-hover:text-gray-500 dark:text-gray-500 dark:group-hover:text-gray-300"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"
+                    /></svg
+                  >Edgucation
+                </a>
+              </li>
+              <li class="mr-2">
+                <a
+                  href="#"
+                  class="inline-flex p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 group"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    class="mt-1 mr-2 w-5 h-5 text-gray-400 group-hover:text-gray-500 dark:text-gray-500 dark:group-hover:text-gray-300"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z"
+                    />
+                    <path
+                      d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"
+                    /></svg
+                  >Experience
+                </a>
+              </li>
+              <li class="mr-2">
+                <a
+                  href="#projects"
+                  class="inline-flex p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 group"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    class="mr-2 w-5 h-5 text-gray-400 group-hover:text-gray-500 dark:text-gray-500 dark:group-hover:text-gray-300"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"
+                    />
+                    <path
+                      d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"
+                    /></svg
+                  >Projects
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -293,8 +377,8 @@
     <!-- Bio -->
 
     <!--  -->
-    <section class="text-gray-600 body-font" id="projects">
-      <div class="container px-5 mb-20 mx-auto">
+    <section class="text-gray-600 body-font"  id="scrollspy-1">
+      <div class="container px-5 mb-20 mx-auto" id="projects">
         <div class="flex flex-col text-center w-full mb-20">
           <div class="text-center mb-2">
             <h1
@@ -545,7 +629,7 @@
           </div>
         </div>
       </div>
-            <div class="container px-6 mx-auto flex flex-wrap mt-5">
+      <div class="container px-6 mx-auto flex flex-wrap mt-5">
         <div class="flex flex-wrap md:-m-2 -m-1 mb-5">
           <div class="flex flex-wrap w-1/2">
             <div class="md:p-2 p-1 w-1/2">
