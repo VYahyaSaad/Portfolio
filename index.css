@@ -67,3 +67,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+@media (max-width:500px) {
+.ul-1{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}    
+}
