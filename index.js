@@ -144,3 +144,7 @@ $scrollSpyEl.addEventListener("scroll.hs.scrollspy", () => {
     HSCollapse.hide($collapseEl);
   }
 });
+
+const btn = (e)=>{
+  e.preventDefault()
+}
