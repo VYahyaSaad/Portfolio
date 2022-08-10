@@ -1,3 +1,23 @@
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 .hero-img {
   margin-left: 5%;
 }
@@ -38,18 +58,19 @@
 
 /* .bg-fx {
   background-image: url("./Assets/bg1.jpg");
+  background-image: url("https://images.unsplash.com/photo-1521587760476-6c12a4b040da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8dW5pdmVyc2l0eXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 200px;
-  filter: blur(2px);
-  -webkit-filter: blur(2px);
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.bg-text {
+} */
+/* .bg-text {
   color: white;
   font-weight: bold;
   position: relative;

@@ -5,14 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.5.2/dist/flowbite.min.css"
+    />
     <script src="./index.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js"></script>
     <title>Portfolio | Yahya saad</title>
   </head>
   <body>
     <header class="text-gray-600 body-font">
       <div
         class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
-        >
+      >
         <a
           class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
         >
@@ -146,14 +151,11 @@
 
             <ul class="ul-1">
               <li class="mr-2">
-                <a
-                  href="#"
-                  class="inline-flex p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 group"
-                >
+                <a href="#" class="inline-flex p-4 rounded-t-lg">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     aria-hidden="true"
-                    class="mr-2 w-5 h-5 text-gray-400 group-hover:text-gray-500 dark:text-gray-500 dark:group-hover:text-gray-300"
+                    class="mr-2 w-5 h-5 text-gray-900"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                     style="margin-top: 2px"
@@ -162,18 +164,51 @@
                       fill-rule="evenodd"
                       d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
                       clip-rule="evenodd"
-                    ></path></svg
-                  >Biography
+                    ></path>
+                  </svg>
+                  <button
+                    data-popover-target="popover-company-profile"
+                    type="button"
+                    class="text-gray-700 focus:outline-none"
+                  >
+                    Biography
+                  </button>
+                  <div
+                    id="popover-company-profile"
+                    role="tooltip"
+                    class="inline-block absolute invisible z-10 w-80 text-sm font-light text-gray-500 bg-white rounded-lg border border-gray-200 shadow-sm opacity-0 transition-opacity duration-300 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600"
+                    data-popper-reference-hidden=""
+                    data-popper-escaped=""
+                    data-popper-placement="top"
+                    style="
+                      position: absolute;
+                      inset: auto auto 0px 0px;
+                      margin: 0px;
+                      transform: translate(217px, 330px);
+                    "
+                  >
+                    <div class="p-3">
+                      <div class="flex">
+                        <h2>Welcome</h2>
+                      </div>
+                    </div>
+                    <div
+                      data-popper-arrow=""
+                      style="
+                        position: absolute;
+                        left: 0px;
+                        transform: translate(155px, 0px);
+                      "
+                    ></div>
+                  </div>
                 </a>
               </li>
               <li class="mr-2">
-                <a
-                  href="#"
-                  class="inline-flex p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 group"
+                <a href="#" class="inline-flex p-4 rounded-t-lg"
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
                     aria-hidden="true"
-                    class="mt-1 mr-2 w-5 h-5 text-gray-400 group-hover:text-gray-500 dark:text-gray-500 dark:group-hover:text-gray-300"
+                    class="mt-1 mr-2 w-5 h-5 text-gray-900"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -184,14 +219,11 @@
                 </a>
               </li>
               <li class="mr-2">
-                <a
-                  href="#"
-                  class="inline-flex p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 group"
-                >
+                <a href="#" class="inline-flex p-4 rounded-t-lg">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     aria-hidden="true"
-                    class="mt-1 mr-2 w-5 h-5 text-gray-400 group-hover:text-gray-500 dark:text-gray-500 dark:group-hover:text-gray-300"
+                    class="mt-1 mr-2 w-5 h-5 text-gray-900"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -205,14 +237,11 @@
                 </a>
               </li>
               <li class="mr-2">
-                <a
-                  href="#projects"
-                  class="inline-flex p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 group"
-                >
+                <a href="#projects" class="inline-flex p-4 rounded-t-lg">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     aria-hidden="true"
-                    class="mr-2 w-5 h-5 text-gray-400 group-hover:text-gray-500 dark:text-gray-500 dark:group-hover:text-gray-300"
+                    class="mr-2 w-5 h-5 text-gray-900"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -232,6 +261,7 @@
       </div>
     </section>
     <!--  -->
+    <!-- Bio -->
     <!-- <div class="bg-fx"></div>
     <div class="flex flex-col text-center w-full mb-5 bg-text">
       <div class="text-center mb-4">
@@ -275,7 +305,7 @@
         <div class="flex flex-wrap -m-4">
           <div class="p-4 lg:w-1/4 w-1/2">
             <div
-              class="flex rounded-lg h-full shadow-sm hover:shadow-lg duration-300 cursor-pointer p-8 flex-col"
+              class="flex rounded-lg h-full shadow-lg duration-300 cursor-pointer p-8 flex-col"
             >
               <div class="flex items-center mb-3 justify-center">
                 <img
@@ -299,7 +329,7 @@
           </div>
           <div class="p-4 lg:w-1/4 w-1/2">
             <div
-              class="flex rounded-lg h-full shadow-sm hover:shadow-lg duration-300 cursor-pointer p-8 flex-col"
+              class="flex rounded-lg h-full shadow-lg duration-300 cursor-pointer p-8 flex-col"
             >
               <div class="flex items-center mb-3 justify-center">
                 <img
@@ -323,7 +353,7 @@
           </div>
           <div class="p-4 lg:w-1/4 w-1/2">
             <div
-              class="flex rounded-lg h-full shadow-sm hover:shadow-lg duration-300 cursor-pointer p-8 flex-col"
+              class="flex rounded-lg h-full shadow-lg duration-300 cursor-pointer p-8 flex-col"
             >
               <div class="flex items-center mb-3 justify-center">
                 <img
@@ -347,7 +377,7 @@
           </div>
           <div class="p-4 lg:w-1/4 w-1/2">
             <div
-              class="flex rounded-lg h-full shadow-sm hover:shadow-lg duration-300 cursor-pointer p-8 flex-col"
+              class="flex rounded-lg h-full shadow-lg duration-300 cursor-pointer p-8 flex-col"
             >
               <div class="flex items-center mb-3 justify-center">
                 <img
@@ -372,11 +402,9 @@
         </div>
       </div>
     </section>
-    <!-- Bio -->
-
     <!--  -->
-    <section class="text-gray-600 body-font"  id="scrollspy-1">
-      <div class="container px-5 mb-20 mx-auto" id="projects">
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 mb-20 mx-auto">
         <div class="flex flex-col text-center w-full mb-20">
           <div class="text-center mb-2">
             <h1
